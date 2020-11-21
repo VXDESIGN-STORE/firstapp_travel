@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.firstapp.travelapplication.Fragment.HomeFragment">
+
+    <Button
+        android:id="@+id/likedposts"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="177dp"
+        android:background="#000000"
+        android:text="Сохраненные объявления"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/changeprofile" />
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="238dp"
+        android:layout_height="244dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="413dp"
+        android:src="@drawable/man"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/nav_header_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/changeprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profilepic" />
+
+    <Button
+        android:id="@+id/changeprofile"
+        android:layout_width="413dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="23dp"
+        android:background="#000000"
+        android:text="Изменить профиль"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/likedposts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+</android.support.constraint.ConstraintLayout>
